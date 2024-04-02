@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
+:root{
+    --mainOpacity: rgba(0,0,0,0.55);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.6));
+  /*background-image: url("./images/publicimages/image-1.jpg");*/
+  opacity: var(--mainOpacity);
+  height: 25em !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.dark-overlay {
+  background-color: rgba(0,0,0,0.35);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-color {
+  background-color: #0e76a8;
+}
+
+.col-image-left {
+  background-image: url("./images/publicimages/image-4.jpg");
+  height: 25em !important;
+}
+
+.col-image-right {
+  background-image: url("./images/publicimages/image-1.jpg");
+  height: 25em !important;
+  object-fit: contain;
+}
+
+.lost-image{
+  background-image: url("./images/publicimages/image-3.jpg");
+  height: 25em !important;
+}
+
+.homepage-carousel-title {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
-.App-link {
-  color: #61dafb;
+.book-div {
+  width: 480px;
+  height: 384px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inactiveLink {
+  pointer-events: none;
+  cursor: default;
 }
