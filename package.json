@@ -1,6 +1,5 @@
 {
   "name": "library-app",
-  "homepage": "https://Eomaxl.github.io/book-library-ui",
   "version": "0.1.1",
   "private": true,
   "dependencies": {
@@ -18,8 +17,6 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
